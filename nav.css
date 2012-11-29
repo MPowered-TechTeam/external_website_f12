@@ -1,0 +1,45 @@
+/* our menu styles */
+
+#sticky_navigation_wrapper {
+	margin-top:-30px;
+	width:100%; 
+	height:35px;
+	background:black; 
+}
+
+#sticky_navigation { 
+	width:100%;
+	margin:0 auto;
+	height:35px;
+	background:black; 
+/*color of navbar background */
+}
+
+#sticky_navigation ul {
+	width:690px;
+	margin:0 auto;
+	list-style:none; 
+	margin:0 auto; 
+}
+
+#sticky_navigation ul li {
+	margin:0;
+	padding:0;
+	display:inline; 
+}
+
+#sticky_navigation ul li a { 
+	display:block;
+	float:left;
+	margin:0 0 0 0px;
+	padding:0 13px;
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+	color:#ddd;
+	text-decoration:none;
+}
+
+#sticky_navigation ul li a:hover, #sticky_navigation ul li a.selected {
+	color:#ffc800;
+}

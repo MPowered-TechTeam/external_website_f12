@@ -1,0 +1,208 @@
+/*// Web Design by Shiva Kilaru. www.shivakilaru.com //*/
+
+/*// MPowered Entrepreneurship, November 2012 //*/
+
+
+body {
+	text-align:center;
+	background-color:black;
+	margin-top:0px;
+	font-family:'novecento_wide_lightbold';
+	letter-spacing:2px;
+	font-weight:bold;
+	color:white;
+	text-transform:uppercase;
+}
+
+#nav-bar {
+	position:fixed;
+	bottom:0px;
+	margin:0 auto;
+	display:inline-block;
+	background-image:url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/asfalt.png');
+	right:0;
+	left:0;
+	width:100%;
+	height:30px;
+	z-index:2;
+}
+/*
+.nav-item {
+	width:100px;
+	height:100px;
+	margin:0 auto;
+	background-image:url('nav-1.png');
+	background-size:cover;
+	margin-top:-29px;
+	display:inline-block;
+}
+
+.nav-item:hover {
+	background-image:url('nav-hover.png');
+	cursor:pointer;
+}
+*/	
+
+.slide {
+	margin: 0 auto;
+	margin-bottom:13px;
+	width: 100%;
+	padding: 4rem 0;
+	height: 34rem;
+	line-height:35rem;
+	text-align:center;
+}
+
+#scrollto1 {
+	height:29rem !important;
+	background-image:url('background-1.png');
+	background-size:cover;
+}
+
+#scrollto2 {
+	background-image:url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/asfalt.png');
+}
+
+#scrollto3 {
+	background-image:url('background-5.png');
+	background-size:cover;
+}
+
+#scrollto4 {
+	background-image:url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/asfalt.png');
+}
+
+#scrollto5 {
+	background-image:url('background-7.png');
+	background-size:cover;
+}
+
+.circle {
+	display:inline-block;
+	right:0;
+	left:0;
+	margin:0 auto;
+	background-image:url('circle.png');
+	background-size:cover;
+	width:45px;
+	height:45px;
+	margin-top:0px;
+	position:absolute;
+	z-index:4;
+}
+
+.logo-banner {
+	background-color:rgba(0,0,0,0.8);
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+	margin-top:-30px;
+	height:175px;
+}
+
+#logo {
+	margin-top:-380px;
+}
+
+.title {
+	line-height:1em;
+	clear:both;
+	margin:15px 0px;
+}
+
+.who-we-are {
+	width:65%;
+	line-height:1.4em;
+	color:white;
+	vertical-align:middle;
+	display:inline-block;
+}
+
+#people-grid {
+	display:inline-block;
+	width:48rem;
+}
+
+#project-grid {
+	display:inline-block;
+	width:60rem;
+}
+
+.project {
+	width:12rem;
+	padding:1rem;
+	margin:0.5rem;
+	line-height:1em;
+	height:7.5rem;
+	background-color:black;
+	float:left;
+	display:inline-block;
+	overflow:hidden;
+	vertical-align:middle;
+	-webkit-box-shadow: 4px 4px 10px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    4px 4px 10px rgba(50, 50, 50, 0.75);
+	box-shadow:         4px 4px 10px rgba(50, 50, 50, 0.75);
+}
+
+.projectdata {
+	display:none;
+}
+
+.person {
+	width:7rem;
+	margin:0.5rem;
+	float:left;
+	display:inline-block;
+	overflow:hidden;
+	vertical-align:middle;
+}
+
+.get-involved {
+	line-height:1em;
+	margin-top:50px;
+}
+
+#project-1000pitches {
+	height:100%;
+	width:100%;
+	background-image:url('projects/1000pitches.png');
+	background-size:contain;
+}
+
+
+/*-------------Projects-----------------*/
+
+#scc {
+	background-image:url('projects/scc.png');
+	background-size:contain;
+}
+
+#sw {
+	background-image:url('projects/sw.png');
+	background-size:contain;
+}
+
+#momentum {
+	background-image:url('projects/momentum.png');
+	background-size:contain;
+}
+
+#eres {
+	background-image:url('projects/eres.png');
+	background-size:contain;
+}
+
+#edu {
+	background-image:url('projects/edu.png');
+	background-size:contain;
+}
+
+#gew {
+	background-image:url('projects/gew.png');
+	background-size:contain;
+}
+
+#scf {
+	background-image:url('projects/scf.png');
+	background-size:contain;
+}
