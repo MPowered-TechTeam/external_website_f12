@@ -130,7 +130,6 @@ body {
 
 .project {
 	width:12rem;
-	padding:1rem;
 	margin:0.5rem;
 	line-height:1em;
 	height:7.5rem;
@@ -144,8 +143,17 @@ body {
 	box-shadow:         4px 4px 10px rgba(50, 50, 50, 0.75);
 }
 
+.project img {
+	width: 100%;
+	height: 100%;
+}
+
 .projectdata {
 	display:none;
+}
+
+.project_text {
+	padding:1rem;
 }
 
 .person {
@@ -166,43 +174,5 @@ body {
 	height:100%;
 	width:100%;
 	background-image:url('projects/1000pitches.png');
-	background-size:contain;
-}
-
-
-/*-------------Projects-----------------*/
-
-#scc {
-	background-image:url('projects/scc.png');
-	background-size:contain;
-}
-
-#sw {
-	background-image:url('projects/sw.png');
-	background-size:contain;
-}
-
-#momentum {
-	background-image:url('projects/momentum.png');
-	background-size:contain;
-}
-
-#eres {
-	background-image:url('projects/eres.png');
-	background-size:contain;
-}
-
-#edu {
-	background-image:url('projects/edu.png');
-	background-size:contain;
-}
-
-#gew {
-	background-image:url('projects/gew.png');
-	background-size:contain;
-}
-
-#scf {
-	background-image:url('projects/scf.png');
 	background-size:contain;
 }

@@ -54,10 +54,12 @@
        var dialog_box = _create(dialog_content);
 
        var is_top_right = $(target_elm).hasClass("tooltiptopright");
+       var is_top_left = $(target_elm).hasClass("tooltiptopleft");
        var is_bottom_right = $(target_elm).hasClass("tooltipbottomright");
+       var is_bottom_left = $(target_elm).hasClass("tooltipbottomleft");
        var is_top = $(target_elm).hasClass("tooltiptop");
        var is_bottom = $(target_elm).hasClass("tooltipbottom");
-       var has_position = is_top_right || is_bottom_right || is_top || is_bottom;
+       var has_position = is_top_right || is_top_left || is_bottom_right || is_bottom_left || is_top || is_bottom;
        var position;
        
        var target_elm_position = $(target_elm).offset();
@@ -76,20 +78,49 @@
            arrow_class : "div.left_arrow"
          }
        }
+       // coming from the top left
+       else if (is_top_left || !has_position && (target_elm_position.top < $(dialog_box).outerHeight() && target_elm_position.top >= config.arrow_top_offset)) {
+         position = { 
+           start : { 
+             left : target_elm_position.left - $(dialog_box).outerWidth() - config.animation_distance,
+             top  : target_elm_position.top + ($(target_elm).outerHeight() / 2) - config.arrow_top_offset
+           },
+           end : {
+             left : target_elm_position.left - $(dialog_box).outerWidth(),
+             top  : target_elm_position.top + ($(target_elm).outerHeight() / 2) - config.arrow_top_offset
+           },
+           arrow_class : "div.right_arrow"
+         }
+       }
        // coming from the bottom right
        else if (is_bottom_right || !has_position && (target_elm_position.left < config.arrow_left_offset + $(target_elm).outerWidth() && target_elm_position.top > $(dialog_box).outerHeight())) {
          position = { 
            start : { 
              left : target_elm_position.left + $(target_elm).outerWidth() + config.animation_distance,
-             top  : target_elm_position.top + ($(target_elm).outerHeight() / 2) + config.arrow_top_offset - $(dialog_box).outerHeight() + config.arrow_height
+             top  : target_elm_position.top + ($(target_elm).outerHeight() / 2) + config.arrow_top_offset - $(dialog_box).outerHeight() + config.arrow_height*2
            },
            end : {
              left : target_elm_position.left + $(target_elm).outerWidth(),
-             top  : target_elm_position.top + ($(target_elm).outerHeight() / 2) + config.arrow_top_offset - $(dialog_box).outerHeight() + config.arrow_height
+             top  : target_elm_position.top + ($(target_elm).outerHeight() / 2) + config.arrow_top_offset - $(dialog_box).outerHeight() + config.arrow_height*2
            },
            arrow_class : "div.left_arrow"
          }
          $(dialog_box).find("div.left_arrow").css({ top: $(dialog_box).outerHeight() - (config.arrow_top_offset * 2) + "px" });
+       }
+       // coming from the bottom left
+       else if (is_bottom_left || !has_position && (target_elm_position.left < config.arrow_left_offset + $(target_elm).outerWidth() && target_elm_position.top > $(dialog_box).outerHeight())) {
+         position = { 
+           start : { 
+             left : target_elm_position.left - $(dialog_box).outerWidth() - config.animation_distance,
+             top  : target_elm_position.top + ($(target_elm).outerHeight() / 2) + config.arrow_top_offset - $(dialog_box).outerHeight() + config.arrow_height*2
+           },
+           end : {
+             left : target_elm_position.left - $(dialog_box).outerWidth(),
+             top  : target_elm_position.top + ($(target_elm).outerHeight() / 2) + config.arrow_top_offset - $(dialog_box).outerHeight() + config.arrow_height*2
+           },
+           arrow_class : "div.right_arrow"
+         }
+         $(dialog_box).find("div.right_arrow").css({ top: $(dialog_box).outerHeight() - (config.arrow_top_offset * 2) + "px" });
        }
        // coming from the top
        else if (is_top || !has_position &&(target_elm_position.top + config.animation_distance > $(dialog_box).outerHeight() && target_elm_position.left >= config.arrow_left_offset)) {
@@ -154,6 +185,7 @@
        return $("<div class='jquery-gdakram-tooltip'>\
          <div class='up_arrow arrow'></div>\
          <div class='left_arrow arrow'></div>\
+         <div class='right_arrow arrow'></div>\
          <div class='content'>" + header + $(content_elm).html() + "</div>\
          <div style='clear:both'></div>\
          <div class='down_arrow arrow'></div>\

@@ -1,5 +1,5 @@
 div.jquery-gdakram-tooltip { 
-  width: 340px;
+  width: 320px;
   color: white;
   font-size: 12px;
 	position: absolute;
@@ -52,4 +52,17 @@ div.jquery-gdakram-tooltip div.left_arrow {
   left: 0px;
 }
 
+div.jquery-gdakram-tooltip div.right_arrow {
+  height: 100%;
+}
+
+div.jquery-gdakram-tooltip div.right_arrow {
+  float:right;
+  background : url('images/master_arrow.png') 0px 0px no-repeat;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 40px;
+  left: 0px;
+}
 
