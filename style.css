@@ -153,16 +153,22 @@ body {
 
 .project_text {
 	padding:1rem;
+	font-size: 12px;
+}
+
+.project_text .link {
+	text-align: right;
 }
 
 .project_text a{
 	text-decoration: none !important;
 	color: white;
+	font-size: 9px;
+	color: #FFC800;
 }
 
 .project_text a:hover{
-	text-decoration: none !important;
-	color: #FFC800;
+	color: white;
 }
 
 .tooltip_text {
