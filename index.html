@@ -14,49 +14,49 @@
 			<script type="text/javascript" src="JQuery-Tooltip-Plugin/javascripts/jquery.tooltip.js"></script>
 			 
 			<script type="text/javascript">
-					$(document).ready(function(){
+			$(document).ready(function(){
 			/* The following code is executed once the DOM is loaded */
 			
-			$('.project').bind("click",function(){
-				
-				// $(this) point to the clicked .sponsorFlip element (caching it in elem for speed):
-				
-				var elem = $(this);
-				
-				// data('flipped') is a flag we set when we flip the element:
-				
-				if(elem.data('flipped'))
-				{
-					// If the element has already been flipped, use the revertFlip method
-					// defined by the plug-in to revert to the default state automatically:
+				$('.project').bind("click",function(){
 					
-					elem.revertFlip();
+					// $(this) point to the clicked .sponsorFlip element (caching it in elem for speed):
 					
-					// Unsetting the flag:
-					elem.data('flipped',false)
-				}
-				else
-				{
-					// Using the flip method defined by the plugin:
+					var elem = $(this);
 					
-					elem.flip({
-						direction:'lr',
-						speed: 200,
-						color: 'black',
-						onBefore: function(){
-							// Insert the contents of the .sponsorData div (hidden from view with display:none)
-							// into the clicked .sponsorFlip div before the flipping animation starts:
-							elem.html(elem.siblings('.projectdata').html());
-						}
-					});
+					// data('flipped') is a flag we set when we flip the element:
 					
-					// Setting the flag:
-					elem.data('flipped',true);
-				}
+					if(elem.data('flipped'))
+					{
+						// If the element has already been flipped, use the revertFlip method
+						// defined by the plug-in to revert to the default state automatically:
+						
+						elem.revertFlip();
+						
+						// Unsetting the flag:
+						elem.data('flipped',false)
+					}
+					else
+					{
+						// Using the flip method defined by the plugin:
+						
+						elem.flip({
+							direction:'lr',
+							speed: 200,
+							color: 'black',
+							onBefore: function(){
+								// Insert the contents of the .sponsorData div (hidden from view with display:none)
+								// into the clicked .sponsorFlip div before the flipping animation starts:
+								elem.html(elem.siblings('.projectdata').html());
+							}
+						});
+						
+						// Setting the flag:
+						elem.data('flipped',true);
+					}
+				});
+				
 			});
-			
-		});
-				</script>
+			</script>
 			<script>
 				$(function()
 				{
@@ -191,9 +191,12 @@
 				</div>
 				<div class="projectdata">
 					<div class="project_text">
-						<a target="_blank" href="http://www.1000pitches.com">
-							1000pitches .com
-						</a>
+						An annual competition for students to let their ideas be heard.
+						<div class='link'>
+							<a target="_blank" href="http://www.1000pitches.com">
+								Visit
+							</a>	
+						</div>
 					</div>
 				</div>
 			</div>
@@ -204,7 +207,12 @@
 				</div>
 				<div class="projectdata">
 					<div class="project_text">
-						Mpowered
+						Startup focused, high energy recruiting and networking event.
+						<div class='link'>
+							<a target="_blank" href="http://www.1000pitches.com">
+								Visit
+							</a>	
+						</div>
 					</div>
 				</div>
 			</div>
@@ -215,7 +223,12 @@
 				</div>
 				<div class="projectdata">
 					<div class="project_text">
-						Mpowered
+						eRes is an entrepreneurial LLC focused on developing new mindsets.
+						<div class='link'>
+							<a target="_blank" href="http://mpowered.umich.edu/eres">
+								Visit
+							</a>	
+						</div>
 					</div>
 				</div>
 			</div>
@@ -224,7 +237,14 @@
 				1000 Pitches Summit
 				</div>
 				<div class="projectdata">
-						Mpowered
+					<div class="project_text">
+						54 hour business competition that could form future companies.
+						<div class='link'>
+							<a target="_blank" href="http://www.1000pitches.com">
+								Visit
+							</a>	
+						</div>
+					</div>
 				</div>
 			</div>
 			<div>
@@ -234,10 +254,10 @@
 				</div>
 				<div class="projectdata">
 					<div class="project_text">
-						54 hour business competition that could form future companies.
+						Bringing people together for 54 hours to build awesome startups.
 						<div class='link'>
-							<a target="_blank" href="http://www.1000pitches.com">
-								1000pitches.com
+							<a target="_blank" href="http://annarbor.startupweekend.org/">
+								Visit
 							</a>	
 						</div>
 					</div>
@@ -249,7 +269,14 @@
 					<img src="projects/gew.png">
 				</div>
 				<div class="projectdata">
-						Mpowered
+					<div class="project_text">
+						Spreading social change through entrepreneurship.
+						<div class='link'>
+							<a target="_blank" href="http://www.1000pitches.com">
+								Visit
+							</a>	
+						</div>
+					</div>
 				</div>
 			</div>
 			<div>
@@ -258,7 +285,14 @@
 					<img src="projects/edu.png">
 				</div>
 				<div class="projectdata">
-						Mpowered
+					<div class="project_text">
+						Give students an opportunity to tackle education's biggest problems.
+						<div class='link'>
+							<a target="_blank" href="http://edupreneurship.weebly.com/">
+								Visit
+							</a>	
+						</div>
+					</div>
 				</div>
 			</div>
 			<div>
@@ -267,7 +301,14 @@
 					<img src="projects/scc.png" />
 				</div>
 				<div class="projectdata">
-						Mpowered
+					<div class="project_text">
+						Introduces students to tangible skills.
+						<div class='link'>
+							<a target="_blank" href="http://www.1000pitches.com">
+								Visit
+							</a>	
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="project" style="background:none; -webkit-box-shadow: none; -moz-box-shadow:none; box-shadow:none;">
@@ -277,7 +318,14 @@
 				The Kenya Project
 				</div>
 				<div class="projectdata">
-						Mpowered
+					<div class="project_text">
+						We take students to Kenya to do social entrepreneurship startups.
+						<div class='link'>
+							<a target="_blank" href="http://mpowered.umich.edu/kenya">
+								Visit
+							</a>	
+						</div>
+					</div>
 				</div>
 			</div>
 			<div>
@@ -286,7 +334,14 @@
 					<img src="projects/momentum.png" />
 				</div>
 				<div class="projectdata">
-						Mpowered
+					<div class="project_text">
+						54 hour business competition that could form future companies.
+						<div class='link'>
+							<a target="_blank" href="http://www.1000pitches.com">
+								Visit
+							</a>	
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="project" style="background:none; -webkit-box-shadow: none; -moz-box-shadow:none; box-shadow:none;">
