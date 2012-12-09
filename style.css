@@ -158,8 +158,6 @@ body {
 
 .project_text .link {
 	text-align: right;
-	position: absolute;
-	bottom: 0px;
 }
 
 .project_text a{
@@ -197,4 +195,37 @@ body {
 	width:100%;
 	background-image:url('projects/1000pitches.png');
 	background-size:contain;
+}
+
+.instruction-grid {
+	width: 800px;
+	margin: 0px auto;
+}
+
+.instruction {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background-color:rgba(0,0,0,0.8);
+	width: 300px;
+	height: 150px;
+	font-size: 8px;
+	display: inline-table;
+	padding: 7px;
+	margin: 25px;
+}
+
+.instruction h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.get-involved a{
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.get-involved a:hover{
+	text-decoration: underline;
 }

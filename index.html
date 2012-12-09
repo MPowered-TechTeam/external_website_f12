@@ -3,16 +3,14 @@
 <html>
 
 	<head>
-
-			<script src="jquery.localscroll.js" type="text/javascript"></script> 
-			<script src="jquery.scrollTo.js" type="text/javascript"></script> 
 			<script type="text/javascript" src="jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"></script>
 			<script type="text/javascript" src="jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
 			<script type="text/javascript" src="js/jquery.flip.min.js"></script>
 			<script src="jquery.localscroll.js" type="text/javascript"></script> 
 			<script src="jquery.scrollTo.js" type="text/javascript"></script>
 			<script type="text/javascript" src="JQuery-Tooltip-Plugin/javascripts/jquery.tooltip.js"></script>
-			 
+			<!--<script src="js/jquery.zoomooz.js"></script> 
+-->
 			<script type="text/javascript">
 			$(document).ready(function(){
 			/* The following code is executed once the DOM is loaded */
@@ -125,6 +123,10 @@
 				 {
 					$('#scrollanimate').localScroll({duration:800});
 					$('.person').tooltip();
+					$('.instruction-grid').hide();
+					$('.show_recruitment').click(function() {
+						$('.instruction-grid').show('slide');
+					});
 				 });
 			</script>
 
@@ -659,18 +661,53 @@
 		</div>
 		
 		<div class="get-involved">
-			<a style="color: #FFFFFF; text-decoration: none;" href="http://umich.us4.list-manage1.com/subscribe?u=f440f834f0ade2ec605b072f9&id=8c61ac873f">sign up for our newsletter</a>
+			<a href="http://umich.us4.list-manage1.com/subscribe?u=f440f834f0ade2ec605b072f9&id=8c61ac873f">sign up for our newsletter</a>
 			<br>
 			•
 			<br>
-			<a style="color: #FFFFFF; text-decoration: none;" href="http://www.facebook.com/groups/222562701142705/?ref=ts&fref=ts">like us on facebook</a>
+			<a href="http://www.facebook.com/groups/222562701142705/?ref=ts&fref=ts">like us on facebook</a>
 			<br>
 			•
 			<br>
-			<a style="color: #FFFFFF; text-decoration: none;" href="join.html">join our team</a>
-		</div>
-	
-	
+			<a class="show_recruitment">join our team</a>
+
+			<br />
+
+			<div class="instruction-grid">
+
+				<div class="instruction first zoomTarget" data-closeclick="true">
+					<h2>Attend Mass Meeting</h2>
+					<p>Learn about MPowered and talk to team leaders.</p>
+					<div class="cushycms">date1</div>
+				</div>
+				<div class="instruction second zoomTarget" data-closeclick="true">
+					<h2>Pick a Project</h2>
+					<p>Decide on a project or internal MPowered team.</p>
+					<ul class="cushycms">
+						<li>Tech Team</li>
+						<li>Marketing Team</li>
+						<li>Social Team</li>
+						<li>1000 Pitches</li>
+						<li>1000 Pitches Summit</li>
+						<li>...</li>
+					</ul>
+				</div>
+				<div class="instruction third zoomTarget" data-closeclick="true">
+					<h2>Get Involved</h2>
+					<p>3 Sunday meetings:</p>
+					<ul>
+						<div class="cushycms">date1</div>
+						<div class="cushycms">date2</div>
+						<div class="cushycms">date3</div>
+					</ul>
+				</div>
+				<div class="instruction fourth zoomTarget" data-closeclick="true">
+					<h2>Fill Out Our Application</h2>
+					<p>A few creative questions to help you stand out.</p>
+				</div>
+			</div>
+
+		</div>	
 	</div>
 	
 </body>
