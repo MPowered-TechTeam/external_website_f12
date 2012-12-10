@@ -15,6 +15,7 @@ div.jquery-gdakram-tooltip div.content {
   border-radius: 4px;
   background-color: #333333;
   width: 280px;
+  min-height: 200px;
   float: left;
   padding: 10px;
 }
