@@ -6,7 +6,7 @@
 	$(document).ready(function(){
 			/* The following code is executed once the DOM is loaded */
 			
-			$('.project').bind("click",function(){
+			$('.tileflip').bind("click",function(){
 				
 				// $(this) point to the clicked .sponsorFlip element (caching it in elem for speed):
 				
