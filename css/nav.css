@@ -16,7 +16,8 @@
 }
 
 #sticky_navigation ul {
-	width:690px;
+	width:800px;
+	height:40px;
 	margin:0 auto;
 	list-style:none; 
 	margin:0 auto; 
@@ -30,8 +31,6 @@
 
 #sticky_navigation ul li a { 
 	display:block;
-	float:left;
-	margin:0 0 0 0px;
 	padding:0 13px;
 	height:35px;
 	line-height:35px;
@@ -42,4 +41,35 @@
 
 #sticky_navigation ul li a:hover, #sticky_navigation ul li a.selected {
 	color:#ffc800;
+}
+
+#sticky_navigation ul li a {
+	float:left;
+}
+
+.nav-left {
+	text-align:right;
+	float:left;
+	width:340px;
+	height:35px;
+	margin-right:-100px;
+}
+
+.nav-right {
+	text-align:left;
+	float:right;
+	width:340px;
+	height:35px;
+	margin-left:-100px;
+
+}
+
+#home {
+		float:none !important;
+		position:relative;
+		margin:0 auto !important;
+}
+
+#who, #projects {
+		float:right !important;
 }
