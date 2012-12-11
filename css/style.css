@@ -63,7 +63,8 @@ body {
 }
 
 #scrollto3 {
-	background:url('../background-5.png') fixed;
+	background:url('../background-9.png') fixed;
+	background-position:center bottom;
 	background-size:cover;
 }
 
