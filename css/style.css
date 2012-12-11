@@ -154,8 +154,11 @@ body {
 	display:none;
 }
 
-.project_text .link {
-	text-align: right;
+.link {
+	background-color: red;
+	margin: 0px auto;
+	height: 35px;
+	width: 35px;
 }
 
 .project_text a{
