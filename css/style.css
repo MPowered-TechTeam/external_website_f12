@@ -155,10 +155,9 @@ body {
 }
 
 .link {
-	background-color: red;
-	margin: 0px auto;
-	height: 35px;
-	width: 35px;
+	margin: -10px auto;
+	height: 32px;
+	width: 32px;
 }
 
 .project_text a{
