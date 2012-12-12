@@ -169,6 +169,18 @@ body {
 	width: 32px;
 }
 
+#arrow {
+	background-image:url('../arrow_right.png');	
+	background-size: cover;
+}
+
+#arrow:hover {
+	background-image:url('../arrow_right_hover.png');
+	background-size: cover;
+	cursor: pointer;
+}
+
+
 .project_text a{
 	text-decoration: none !important;
 	color: white;
