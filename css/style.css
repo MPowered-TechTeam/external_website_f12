@@ -141,9 +141,9 @@ body {
 	display:inline-block;
 	overflow:hidden;
 	vertical-align:middle;
-	-webkit-box-shadow: 4px 4px 10px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    4px 4px 10px rgba(50, 50, 50, 0.75);
-	box-shadow:         4px 4px 10px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.75);
 }
 
 .project img {
@@ -206,17 +206,14 @@ body {
 
 #get, #proj {
 	padding:10px;
-	border-radius:3px;
 	
-	background-image: linear-gradient(bottom, rgba(0,0,0, 0.7) 20%, rgba(43,43,43, 0.7) 60%);
-	background-image: -o-linear-gradient(bottom, rgba(0,0,0, 0.7) 20%, rgba(43,43,43, 0.7) 60%);
-	background-image: -moz-linear-gradient(bottom, rgba(0,0,0, 0.7) 20%, rgba(43,43,43, 0.7) 60%);
-	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0, 0.7) 20%, rgba(43,43,43, 0.7) 60%);
-	background-image: -ms-linear-gradient(bottom, rgba(0,0,0, 0.7) 20%, rgba(43,43,43, 0.7) 60%);
+	background-image:url('../title-bg.png');
+	background-size:cover;
+	line-height:40px;
 	
-	width:200px;
+	width:220px;
+	height:40px;
 	margin:10px auto;
-	border:1.5px solid rgba(0,0,0,0.2);
 
 }
 
