@@ -56,6 +56,7 @@
 				// our function that decides weather the navigation bar should have "fixed" css position or not.
 				var sticky_navigation = function(){
 					var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+					var scroll_bottom = $(window).scrollTop()+$(window).height();
 					 
 					// if we've scrolled more than the navigation, change its position to fixed to stick to top,
 					// otherwise change it back to relative
@@ -73,27 +74,17 @@
 					$('#people').removeClass('selected')
 					$('#involved').removeClass('selected')
 
-					if (scroll_top > $('#scrollto1').offset().top && scroll_top < $('#scrollto2').offset().top) {
-						$('#home').addClass('selected')
-						//function to change class of scrollto1 to selected
-					}
-
-					if (scroll_top > $('#scrollto2').offset().top && scroll_top < $('#scrollto3').offset().top) {
-						$('#who').addClass('selected')
-						//function to change class of scrollto1 to selected
-					}
-					if (scroll_top > $('#scrollto3').offset().top && scroll_top < $('#scrollto4').offset().top) {
-						$('#projects').addClass('selected')
-						//function to change class of scrollto1 to selected
-					}
-					if (scroll_top > $('#scrollto4').offset().top && scroll_top < $('#scrollto5').offset().top) {
-						$('#people').addClass('selected')
-						//function to change class of scrollto1 to selected
-					}
-					if (scroll_top > $('#scrollto5').offset().top) {
+					if ($("#get").offset().top < scroll_bottom)
 						$('#involved').addClass('selected')
-						//function to change class of scrollto1 to selected
-					}
+					else if($("#ourteam").offset().top < scroll_bottom)
+						$('#people').addClass('selected')
+					else if($("#proj").offset().top < scroll_bottom)
+						$('#projects').addClass('selected')
+					else if($("#mission").offset().top < scroll_bottom)
+						$('#who').addClass('selected')
+					else
+						$('#home').addClass('selected')
+
 
 
 				};
