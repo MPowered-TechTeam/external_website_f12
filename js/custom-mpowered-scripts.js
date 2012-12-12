@@ -109,4 +109,23 @@ $(document).ready(function()
 	$('.show_recruitment').click(function() {
 		$('.instruction-grid').show('slide');
 	});
+
+	//___________email setup_________________
+	$('.email-step1').click(function() {
+		$('.email-step1').hide('fade', function() {
+			$('.email-step2').show();
+		});
+	});
+	$('.email-step2').hide();
+	$('.email-step2 form').submit(function() {
+		$('.email-step2').hide('fade', function() {
+			$('.email-step3').show('clip', function() {
+				$('.email-step3').hide('fade', 1000, function() {
+					$('.email-step1').show();
+				});
+			});
+		});
+		return false;
+	});
+	$('.email-step3').hide();
 });
