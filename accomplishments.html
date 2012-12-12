@@ -5,6 +5,17 @@
 		width: 600px;
 		height: 420px;
 	}
+	.box {
+		width: 220px;
+		padding: 10px;
+		margin: 5px;
+		float: left;
+		background-color:rgba(0,0,0,0.8);
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		color: white;
+	}
 
 </style>
 
@@ -13,13 +24,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script src="masonry.js"></script>
 
-
-
-
-
-
-
-
 </head>
 <body>
 <div class="accomplishments">
@@ -27,14 +31,17 @@
 
 
 	<div id="container">
-		<div class="box"><p>askjdhkajdhkjasd</p></div>
-		<div class="box"><p>sample</p></div>
-		<div class="box"><b>WOAH</b></div>
+		<div class="box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet placerat tempus. Phasellus eros arcu, ullamcorper vitae convallis ut, vulputate et magna. Ut vitae massa nisl, non ultricies velit. Proin sodales porta lectus, et volutpat ante lacinia non. Maecenas nisi ligula, pellentesque quis eleifend scelerisque, faucibus ac dui. Nulla facilisi. In vitae aliquam libero.
+			</p>
+		</div>
+		<div class="box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet placerat tempus. Phasellus eros arcu, ullamcorper vitae convallis ut, vulputate et magna. Ut vitae massa nisl, non ultricies  </p>
+		</div>
+		<div class="box">
+			<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet placerat tempus. Phasellus eros arcu, ullamcorper vitae convallis ut, vulputate et magna. Ut vitae massa nisl, non ultricies velit. Proin sodales porta lectus, et volutpat ante lacinia non. Maecenas nisi ligula, pellentesque quis eleifend scelerisque, faucibus ac dui. Nulla facilisi. In vitae aliquam libero. </b>
+		</div>
 	</div>
-
-
-
-
 </div>
 
 <script type="text/javascript">
@@ -43,7 +50,7 @@ $(function(){
   $('#container').masonry({
     // options
     itemSelector : '.box',
-    columnWidth : 500
+    columnWidth : 10
   });
 });
 
