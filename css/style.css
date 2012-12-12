@@ -55,7 +55,7 @@ body {
 
 #scrollto1 {
 	height:29rem !important;
-	background: url('../background-56.png') fixed;	
+	background: url('../optimized-background-56.png') fixed;	
 	background-size:cover;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 #scrollto3 {
-	background:url('../background-9.png') fixed;
+	background:url('../optimized-background-9.png') fixed;
 	background-position:center bottom;
 	background-size:cover;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 #scrollto5 {
-	background:url('../background-7.png') fixed;
+	background:url('../optimized-background-7.png') fixed;
 	background-size:cover;
 }
 
