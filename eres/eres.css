@@ -1,0 +1,71 @@
+#sticky_navigation_wrapper {
+		position:fixed;
+		top:30px;
+}
+
+body {
+
+	background-image:url('../asfalt.png');
+}
+
+.eres-logo {
+		margin:0 auto;
+		height:190px;
+		margin-top:30px;
+}
+
+.eres-logo img {
+	vertical-align: top !important;
+}
+
+.important-alert {
+		width:550px;
+		background:black;
+		border:3px solid #ffc800;
+		margin:0 auto;
+		line-height:30px;
+		padding:20px;
+		font-size:20px;
+		letter-spacing:0px;
+		margin-top:30px;
+}
+
+.info {
+	font-family:'Droid Serif';
+	line-height:24px;
+	letter-spacing:0px;
+	margin-top:40px;
+	font-weight:normal;
+	font-size:18px;
+}
+
+.rsvp {
+	cursor:pointer;
+	color:white;
+	text-decoration:none;
+	-webkit-transition:color .5s ease;
+	-moz-transition:color .5s ease;
+	transition: color .5s ease;
+}
+
+.rsvp:hover {
+	color:#ffc800;
+}
+
+.about {
+	font-family:'Droid Serif';
+	letter-spacing:0px;
+	font-weight:normal;
+	margin:0 auto;
+	width:550px;
+	margin-top:50px;
+	font-size:14px;
+	line-height:20px;
+	text-align:center;
+	padding-bottom:40px;
+}
+
+.about ul {
+	width:350px;
+	margin:20px auto;
+}

@@ -6,7 +6,6 @@
 	
 			<link rel="stylesheet" type="text/css" href="css/reset.css" />
 			<link rel="stylesheet" type="text/css" href="css/font.css" />
-			<link rel="stylesheet" type="text/css" href="css/font2.css" />
 			<link rel="stylesheet" type="text/css" href="css/nav.css" />
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
 			
@@ -594,10 +593,10 @@ mixpanel.init("ddc8a62058d644b4b619761ac56e7fad");</script><!-- end Mixpanel -->
 							  fjs.parentNode.insertBefore(js, fjs);}
 							  (document, 'script', 'facebook-jssdk'));</script>
 
-							<div class="fb-like" data-href="http://www.facebook.com/MPEntrepreneurship" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false" data-font="arial"></div>
+							<div class="fb-like" onClick=mixpanel.track('Liked Us on Facebook') data-href="http://www.facebook.com/MPEntrepreneurship" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false" data-font="arial"></div>
 							<br>
 							<br>
-						<a href="https://twitter.com/MPowered" class="twitter-follow-button" data-show-count="false" style="text-align:center;">Follow @MPowered</a>
+						<a onClick="mixpanel.track('Followed Us on Twitter')" href="https://twitter.com/MPowered" class="twitter-follow-button" data-show-count="false" style="text-align:center;">Follow @MPowered</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						</div>
 
@@ -688,5 +687,22 @@ mixpanel.init("ddc8a62058d644b4b619761ac56e7fad");</script><!-- end Mixpanel -->
 			</div>	
 		</div>
 	</section>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36868899-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+
+	
 </body>
 </html>
