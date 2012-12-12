@@ -249,3 +249,13 @@ body {
 .get-involved a:hover{
 	text-decoration: underline;
 }
+
+.email-step1 {
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.email-step1:hover{
+	text-decoration: underline;
+}
