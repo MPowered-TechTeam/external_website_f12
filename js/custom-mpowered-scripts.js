@@ -105,18 +105,14 @@ $(document).ready(function()
 {
 	$('#scrollanimate').localScroll({duration:800});
 	$('.person').tooltip();
+	/*
 	$('.instruction-grid').hide();
 	$('.show_recruitment').click(function() {
 		$('.instruction-grid').show('slide');
 	});
+	*/
 
 	//___________email setup_________________
-	$('.email-step1').click(function() {
-		$('.email-step1').hide('fade', function() {
-			$('.email-step2').show();
-		});
-	});
-	$('.email-step2').hide();
 	$('.email-step2 form').submit(function() {
 		$('.email-step2').hide('fade', function() {
 			$('.email-step3').show('clip', function() {
