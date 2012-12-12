@@ -192,6 +192,10 @@ body {
 	color: white;
 }
 
+.tileflip img {
+	cursor: pointer;
+}
+
 .tooltip_text {
 	padding: 1rem;
 	text-align: left;
