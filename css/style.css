@@ -309,6 +309,10 @@ body {
 		height:150px;
 		width:250px;
 		background:black;
+			-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background-color:rgba(0,0,0,0.8);
 }
 
 .box-newsletter {
@@ -317,6 +321,10 @@ body {
 		height:150px;
 		width:250px;
 		background:black;
+			-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background-color:rgba(0,0,0,0.8);
 }
 
 .box-join {
@@ -324,4 +332,8 @@ body {
 		height:150px;
 		width:250px;
 		background:black;
+			-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background-color:rgba(0,0,0,0.8);
 }
