@@ -285,3 +285,15 @@ body {
 .email-step1:hover{
 	text-decoration: underline;
 }
+
+.getinvolved-wrapper {
+		width:800px;
+		height:300px;
+		margin:0 auto;
+}
+
+.box-social {
+		float:left;
+		height:150px;
+		width:300px;
+}
