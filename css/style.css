@@ -55,7 +55,7 @@ body {
 
 #scrollto1 {
 	height:29rem !important;
-	background: url('../background-56.png') fixed;	
+	background: url('../optimized-background-56.png') fixed;	
 	background-size:cover;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 #scrollto3 {
-	background:url('../background-9.png') fixed;
+	background:url('../optimized-background-9.png') fixed;
 	background-position:center bottom;
 	background-size:cover;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 #scrollto5 {
-	background:url('../background-7.png') fixed;
+	background:url('../optimized-background-7.png') fixed;
 	background-size:cover;
 }
 
@@ -190,6 +190,10 @@ body {
 
 .project_text a:hover{
 	color: white;
+}
+
+.tileflip img {
+	cursor: pointer;
 }
 
 .tooltip_text {
@@ -373,4 +377,19 @@ body {
 	padding:3px;
 	color:white;
 	font-family:'Droid Serif', serif;
+}
+
+.copyright {
+	width:100%;
+	background:rgba(0,0,0,0.65);
+	height:30px;
+	line-height:30px;
+	position:relative;
+	bottom:5px;
+	font-size:9px;
+	color:rgba(255,255,255,0.7);
+	letter-spacing:0px;
+	margin-top:-38px;
+	font-weight:normal;
+	font-family:'Droid Serif';
 }

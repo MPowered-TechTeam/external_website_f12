@@ -6,11 +6,10 @@
 	
 			<link rel="stylesheet" type="text/css" href="css/reset.css" />
 			<link rel="stylesheet" type="text/css" href="css/font.css" />
-			<link rel="stylesheet" type="text/css" href="css/font2.css" />
 			<link rel="stylesheet" type="text/css" href="css/nav.css" />
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
 			
-			<link rel="shortcut icon" type="image/x-icon" href="http://shivakilaru.com/Update/favicon.ico?" />
+			<link rel="shortcut icon" type="image/x-icon" href="http://shivakilaru.com/newsite2/favicon.ico?" />
 			
 			<link rel="stylesheet" href="js/JQuery-Tooltip-Plugin/stylesheets/jquery.tooltip/jquery.tooltip.css" type="text/css" />
 
@@ -28,11 +27,24 @@
 
 		<title>MPowered Entrepreneurship</title>
 		<meta charset="utf-8" />
+		<meta property="og:image" content="http://shivakilaru.com/fb-thumbnail.png"/>
+		<meta property="og:title" content="MPowered Entrepreneurship"/>
+		<meta property="og:url" content="http://www.mpowered.umich.edu"/>
+		<meta property="og:site_name" content="MPowered Entrepreneurship"/>
+		<meta property="og:type" content="website"/>
+
+		<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("ddc8a62058d644b4b619761ac56e7fad");</script><!-- end Mixpanel -->
 		
 	</head>
 
 
 	<body>
+
+		<script type="text/javascript">
+		    mixpanel.track("Loaded the Home Page");
+		</script>
 	
 	<section id="slide-1" data-type="background" data-speed="10">
 		<div class="slide" id="scrollto1">
@@ -126,7 +138,7 @@
 						<div class="project_text">
 							Surround yourself with other passionate students in a living-learning community.
 						</div>
-						<a target="_blank" href="http://umeres.com">
+						<a target="_blank" href="http://mpowered.umich.edu/eres">
 							<div class='link' id="arrow">
 							</div>
 						</a>	
@@ -180,14 +192,14 @@
 				<div>
 					<div class="project tileflip">
 						<!-- EDUpreneurship Conference -->
-						<img src="projects/edu.png">
+						<img src="projects/edu2.png">
 					</div>
 					<div class="projectdata">
 						<div class="project_text">
 							Work with other motivated students to tackle education's biggest problems.
 						</div>
 
-						<a target="_blank" href="http://edupreneurship.weebly.com/">
+						<a target="_blank" href="http://edupreneurshipsummit.wix.com/home">
 							<div class='link' id="arrow">
 							</div>	
 						</a>	
@@ -217,7 +229,7 @@
 						<div class="project_text">
 							Help develop communities in Kenya while augmenting your entrepreneurial skills.
 						</div>
-						<a target="_blank" href="http://mpowered.umich.edu/kenya">
+						<a target="_blank" href="http://mpowered.umich.edu/kenya_project/index.php">
 							<div class='link' id="arrow">
 							</div>
 						</a>	
@@ -581,10 +593,10 @@
 							  fjs.parentNode.insertBefore(js, fjs);}
 							  (document, 'script', 'facebook-jssdk'));</script>
 
-							<div class="fb-like" data-href="http://www.facebook.com/MPEntrepreneurship" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false" data-font="arial"></div>
+							<div class="fb-like" onClick=mixpanel.track('Liked Us on Facebook') data-href="http://www.facebook.com/MPEntrepreneurship" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false" data-font="arial"></div>
 							<br>
 							<br>
-						<a href="https://twitter.com/MPowered" class="twitter-follow-button" data-show-count="false" style="text-align:center;">Follow @MPowered</a>
+						<a onClick="mixpanel.track('Followed Us on Twitter')" href="https://twitter.com/MPowered" class="twitter-follow-button" data-show-count="false" style="text-align:center;">Follow @MPowered</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						</div>
 
@@ -607,7 +619,7 @@
 									<input type='hidden' name='MERGE2' value='Website' />
 									<input class="emailbox" onclick="this.value='';" type='text' name='MERGE0' value='email here' />
 									<Br>
-									<input class="submit" type='submit' value='Subscribe'/>
+									<input class="submit" type='submit' value='Subscribe' onClick='mixpanel.track("Signed Up For Newsletter");'/>
 								</form>
 							</div>
 							<div class="email-step3">
@@ -621,13 +633,18 @@
 					<div class="box-join">
 						<div class="show_recruitment">join our team</a>
 
-							<br><br>
+							<br>
 
 
 						<div class="box-content" style="margin-top:10px">
-							Get on board. Spread your entrepreneurial spirit across campus.
-							More info coming soon. 
-							<br><br>Interested? Shoot us an email at <br><span style="color:#ffc800">mpowered-contact@umich.edu</span>
+							<u>Mass Meeting</u><br />
+							January 18th 7pm, 
+							Ross - R2310<br />
+							<u>Sunday Meetings</u><br />
+							January 21th 6pm<br />
+							January 27th 6pm<br />
+							<br />
+							<span style="color:#ffc800">mpowered-contact@umich.edu</span>
 							<!--
 							<div class="instruction-grid">
 
@@ -669,11 +686,27 @@
 					</div>
 				</div>
 
-
-
-
-			</div>	
+			</div>
 		</div>
 	</section>
+
+<div class="copyright">
+		&copy; 2012 MPowered Entrepreneurship, All Rights Reserved. MPowered Entrepreneurship is a non-profit organization.
+	</div>
+
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36868899-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </body>
 </html>

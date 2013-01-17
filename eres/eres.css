@@ -1,0 +1,144 @@
+#sticky_navigation_wrapper {
+		position:fixed;
+		top:30px;
+}
+
+body {
+
+	background-image:url('../asfalt.png');
+}
+
+.slide {
+	margin: 0 auto;
+	margin-bottom:13px;
+	width: 100%;
+	padding: 4rem 0;
+	height: 36rem;
+	text-align:center;
+	overflow:hidden;
+}
+
+.wrapper {
+		border-left:3px solid #ffc800;
+		border-right:3px solid #ffc800;
+		width:600px;
+		margin:0 auto;
+		background-color:rgba(0,0,0,0.6);
+		padding:40px;
+		margin-top:-50px;
+}
+
+.eres-logo {
+		margin:0 auto;
+		height:190px;
+		margin-top:30px;
+}
+
+.eres-logo img {
+	vertical-align: top !important;
+}
+
+.important-alert {
+		width:500px;
+		background:black;
+		border:3px solid #ffc800;
+		margin:0 auto;
+		line-height:30px;
+		padding:20px;
+		font-size:20px;
+		letter-spacing:0px;
+		color:white;
+}
+
+.info {
+	font-family:'Droid Serif';
+	line-height:24px;
+	letter-spacing:0px;
+	font-weight:normal;
+	font-size:18px;
+}
+
+.rsvp {
+	cursor:pointer;
+	text-decoration:none;
+	color:White;
+	-webkit-transition:color .5s ease;
+	-moz-transition:color .5s ease;
+	transition: color .5s ease;
+}
+
+.rsvp:hover {
+	color:#ffc800;
+}
+
+.about {
+	font-family:'Droid Serif';
+	letter-spacing:0px;
+	font-weight:normal;
+	margin:0 auto;
+	width:700px;
+	font-size:14px;
+	line-height:20px;
+	text-align:center;
+	padding-bottom:40px;
+}
+
+.about ul {
+	width:350px;
+	margin:20px auto;
+}
+
+.ugh {
+	text-decoration:none;
+	line-height:20px;
+}
+
+.apply-button {
+	padding:30px 20px;
+	text-decoration:none;
+	background-image:url('button.png');
+	background-size:cover;
+	margin:0 auto;
+	width:280px;
+	vertical-align:middle;
+	font-family:'novecento_wide_lightbold';
+	margin-bottom:40px;
+	color:black;
+	letter-spacing:0px;
+
+}
+
+#apply-now {
+	line-height:20px;
+	font-family:'Droid Serif';
+	font-size:14px;
+}
+
+.apply-title {
+	font-size:20px;
+	letter-spacing:1px;
+	margin-top:0px;
+	line-height:20px;
+	font-family:'novecento_wide_lightbold';
+}
+
+.apply-button:hover {
+	background-image:url('hover.png');
+}
+
+.disclaimer {
+	text-align:center;
+	width:750px;
+	font-weight:normal;
+	letter-spacing:0px;
+	margin:0 auto;
+}
+
+.disclaimer a {
+	color:#ffc800;
+}
+
+.application {
+	margin:0 auto;
+	width:750px;
+}
