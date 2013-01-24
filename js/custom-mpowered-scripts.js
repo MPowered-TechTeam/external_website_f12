@@ -124,4 +124,17 @@ $(document).ready(function()
 		return false;
 	});
 	$('.email-step3').hide();
+	$('#people-grid').hide();
+	$('#linktopeople').click(function(){
+		$(".accomplishments").hide();
+		$('#people-grid').show("slide");
+	})
+$('.accomplishments').masonry({
+    // options
+    itemSelector : '.box-accomp',
+    columnWidth : 0
+  });
+
 });
+
+
