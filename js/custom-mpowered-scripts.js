@@ -131,8 +131,8 @@ function slide_in_achievements() {
 		
 //---------------------- Achievements ---------------------------------------
 		$('#people-grid').hide();
-		$('#linktopeople').click(slide_in_team);
-		$('#linktoachievements').click(slide_in_achievements);
+		$('.linktopeople').click(slide_in_team);
+		$('.linktoachievements').click(slide_in_achievements);
 
 		$('.accomplishments').masonry({
 			// options
