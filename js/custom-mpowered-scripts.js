@@ -1,6 +1,16 @@
 // Custom scripts for the MPowered page - by Jeff Sallans, Praful Mathur, and Jen Eisenberg.
 
-	
+function slide_in_team() {
+
+	$(".accomplishments").hide();
+	$('#people-grid').show("slide");
+}	
+
+function slide_in_achievements() {
+
+	$("#people-grid").hide();
+	$('.accomplishments').show("slide");
+}
 	
 // ------------------------ Flip Tiles ------------------------
 	
@@ -118,11 +128,12 @@
 			return false;
 		});
 		$('.email-step3').hide();
+		
+//---------------------- Achievements ---------------------------------------
 		$('#people-grid').hide();
-		$('#linktopeople').click(function(){
-			$(".accomplishments").hide();
-			$('#people-grid').show("slide");
-		})
+		$('#linktopeople').click(slide_in_team);
+		$('#linktoachievements').click(slide_in_achievements);
+
 		$('.accomplishments').masonry({
 			// options
 			itemSelector : '.box-accomp',
