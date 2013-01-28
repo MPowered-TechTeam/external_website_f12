@@ -1,7 +1,8 @@
 	.accomplishments {
 		width: 48rem;
 		height: 32rem;
-		display: inline-block;
+		position: absolute;
+		margin: 0 auto;
 	}
 	.box-accomp {
 		float: left;
