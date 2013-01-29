@@ -3,12 +3,14 @@
 function slide_in_team() {
 
 	$(".accomplishments").hide();
+	$('#people').html("Our Team");
 	$('#people-grid').show("slide");
 }	
 
-function slide_in_achievements() {
+function slide_in_accomplishments() {
 
 	$("#people-grid").hide();
+	$('#people').html("What We've Done");
 	$('.accomplishments').show("slide");
 }
 	
@@ -132,7 +134,7 @@ function slide_in_achievements() {
 //---------------------- Achievements ---------------------------------------
 		$('#people-grid').hide();
 		$('.linktopeople').click(slide_in_team);
-		$('.linktoachievements').click(slide_in_achievements);
+		$('.linktoaccomplishments').click(slide_in_achievements);
 
 		$('.accomplishments').masonry({
 			// options
