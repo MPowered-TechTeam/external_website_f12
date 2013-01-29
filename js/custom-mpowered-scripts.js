@@ -10,7 +10,7 @@ function slide_in_team() {
 function slide_in_accomplishments() {
 
 	$("#people-grid").hide();
-	$('#people').html("What We've Done");
+	$('#people').html("Accomplishments");
 	$('.accomplishments').show("slide");
 }
 	
