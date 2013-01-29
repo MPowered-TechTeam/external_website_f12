@@ -5,14 +5,10 @@
 		margin: 0 auto;
 	}
 
-	.accomplishments p {
-
-		top: -32rem;
-	}
-
 	.box-accomp {
 		float: left;
 		margin: .25rem;
+		line-height: 100%;
 		background-color:#ffc800;
 		-webkit-border-radius: 7px;
 		-moz-border-radius: 7px;
@@ -25,14 +21,17 @@
 	}
 
 	.medium {
-		width: 11.5rem;
-		height: 11.5rem;
+		width: 10.5rem;
+		height: 10.5rem;
+		padding: 0.5rem
 	}
 	.small{
-		width: 11.5rem;
-		height: 7.5rem;
+		width: 10.5rem;
+		height: 6.5rem;
+		padding: 0.5rem
 	}
 	.huge{
-		width: 23.5rem;
-		height: 23.5rem;
+		width: 19.5rem;
+		height: 19.5rem;
+		padding: 2rem
 	}
