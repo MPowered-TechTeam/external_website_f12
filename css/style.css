@@ -124,7 +124,7 @@ body {
 
 #people-grid {
 	position: absolute;
-	display: inline-block;
+	margin: 0 auto;
 	width:48rem;
 }
 

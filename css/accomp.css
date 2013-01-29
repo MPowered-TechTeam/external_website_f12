@@ -4,6 +4,12 @@
 		position: absolute;
 		margin: 0 auto;
 	}
+
+	.accomplishments p {
+
+		top: -32rem;
+	}
+
 	.box-accomp {
 		float: left;
 		margin: .25rem;
@@ -13,6 +19,11 @@
 		border-radius: 7px;
 		color: black;
 	}
+
+	.box-accomp:hover {
+		background-color:#f8d76b;
+	}
+
 	.medium {
 		width: 11.5rem;
 		height: 11.5rem;
