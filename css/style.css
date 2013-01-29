@@ -123,7 +123,8 @@ body {
 }
 
 #people-grid {
-	display:inline-block;
+	position: absolute;
+	display: inline-block;
 	width:48rem;
 }
 
