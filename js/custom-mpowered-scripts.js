@@ -93,9 +93,9 @@ function slide_in_accomplishments() {
 		});
 
 		$('.box-accomp').click(function() {
-			if ($(this).attr('link') != null) {
+			if ($(this).children('.link').attr('value') != null) {
 				window.open(
-				  $(this).attr('link'),
+				  $(this).children('.link').attr('value'),
 				  '_blank' // <- This is what makes it open in a new window.
 				);
 			}
