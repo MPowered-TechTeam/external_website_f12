@@ -82,7 +82,7 @@ function slide_in_accomplishments() {
 		$('.email-step3').hide();
 		
 //---------------------- Achievements ---------------------------------------
-		$('#people-grid').hide();
+		//$('#people-grid').hide();
 		$('.linktopeople').click(slide_in_team);
 		$('.linktoaccomplishments').click(slide_in_accomplishments);
 
